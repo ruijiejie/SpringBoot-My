@@ -14,8 +14,13 @@ public class Example {
         return "Hello World!";
     }
 
+    @RequestMapping("/gittest")
+    String gitTest() {
+        return "this is git test.";
+    }
+
     @RequestMapping("/hello/{myName}")
     String index(@PathVariable String myName) {
-        return "Hello "+myName+"!!!";
+        return "Hello " + myName + "!!!";
     }
 }
